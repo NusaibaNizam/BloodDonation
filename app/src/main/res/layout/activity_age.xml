@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgeActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+    <ImageView
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/logoIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/blood" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIV"
+        android:id="@+id/letUsTV"
+        android:textColor="@color/black"
+        android:text="How Old Are You?"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Am"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/iamTV"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/letUsTV"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ageRV"
+        android:layout_below="@+id/iamTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:paddingLeft="183dp"
+        android:paddingRight="183dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Years Old"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/oldTV"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/ageRV"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dayRV"
+        android:layout_below="@+id/oldTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:paddingLeft="183dp"
+        android:paddingRight="183dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/dayTV"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/dayRV"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/monthRV"
+        android:layout_below="@+id/dayTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:paddingLeft="183dp"
+        android:paddingRight="183dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:id="@+id/monthTV"
+        android:textColor="@color/gray"
+        android:layout_below="@+id/monthRV"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/provideTV"
+        android:layout_below="@id/monthTV"
+        android:text="@string/age"
+        android:textSize="17dp"
+        android:gravity="center"
+        />
+    <soup.neumorphism.NeumorphButton
+        android:layout_below="@id/provideTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:neumorph_backgroundColor="@color/red"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="Next"
+
+        />
+
+
+</RelativeLayout>

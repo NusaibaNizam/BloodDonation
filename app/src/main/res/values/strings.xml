@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Blood Donation</string>
+    <string name="Forgot"><u>Forgot password?</u></string>
+    <string name="SignUp">Don\'t have an Account? <b>SignUp</b></string>
+    <string name="weight">Note you can not donate blood if you are underweight
+        . Minimum weight for blood donation is <b>50kg</b></string>
+    <string name="age">Correct birthday gives you best experience with the community. Don\'t hide it.</string>
+</resources>
