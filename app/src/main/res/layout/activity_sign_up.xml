@@ -7,7 +7,7 @@
     tools:context=".SignUpActivity"
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
-    android:paddingTop="21dp">
+    android:paddingTop="20dp">
 
 
     <ImageView
